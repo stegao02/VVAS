@@ -55,6 +55,7 @@ struct performance_test
   unsigned long last_displayed_frame = 0;
   long long timer_start;
   long long last_displayed_time;
+  long long excution_time_dpu;
 };
 typedef struct performance_test vvas_perf;
 

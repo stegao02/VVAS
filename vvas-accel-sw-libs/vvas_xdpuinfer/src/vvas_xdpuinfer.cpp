@@ -606,7 +606,7 @@ vvas_xrunmodel (vvas_xkpriv * kpriv, VVASFrame *inputs[MAX_NUM_OBJECT])
   VVASFrame *cur_frame = NULL;
 
   LOG_MESSAGE (LOG_LEVEL_DEBUG, kpriv->log_level, "enter");
-
+  auto start_time = get_time();
   for (i = 0; i < kpriv->batch_size; i++)
     predictions[i] = NULL;
 
@@ -635,7 +635,7 @@ vvas_xrunmodel (vvas_xkpriv * kpriv, VVASFrame *inputs[MAX_NUM_OBJECT])
 
   if (model->run (kpriv, images, predictions) != true) {
     LOG_MESSAGE (LOG_LEVEL_ERROR, kpriv->log_level, "Model run failed %s",
-        kpriv->modelname.c_str ());
+        kpriv->modelname.c_str());
     return -1;
   }
 
@@ -665,6 +665,9 @@ vvas_xrunmodel (vvas_xkpriv * kpriv, VVASFrame *inputs[MAX_NUM_OBJECT])
 
   delete[] predictions;
 
+  auto end_time = get_time();
+  kpriv->pf.excution_time_dpu = end_time - start_time;
+  LOG_MESSAGE (LOG_LEVEL_INFO, kpriv->log_level, "%s :DPU excution time:%d us", kpriv->modelname.c_str(), kpriv->pf.excution_time_dpu);
   return true;
 }
 

@@ -606,7 +606,7 @@ vvas_xrunmodel (vvas_xkpriv * kpriv, VVASFrame *inputs[MAX_NUM_OBJECT])
   VVASFrame *cur_frame = NULL;
 
   LOG_MESSAGE (LOG_LEVEL_DEBUG, kpriv->log_level, "enter");
-
+  auto start_time = get_time();
   for (i = 0; i < kpriv->batch_size; i++)
     predictions[i] = NULL;
 

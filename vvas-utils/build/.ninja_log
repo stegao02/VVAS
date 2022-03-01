@@ -1,0 +1,14 @@
+# ninja log v5
+0	174	1646160946291132776	utils/libxrtutil.so.p/xrt_utils.c.o	2b520d77651352e2
+4	217	1646160946335132988	utils/libvvasutil.so.p/vvas_kernel_utils.c.o	7bc6a262f5467fad
+175	224	1646160946339133008	utils/libxrtutil.so	f35b54c863c6e70f
+224	483	1646160946583134190	utils/libxrtutil.so.p/libxrtutil.so.symbols	ea833284616068a1
+483	535	1646160946651134520	utils/libvvasutil.so	b7c270b635a1f0b3
+1	276	0	meson-install	7b0b7fc1634265a5
+1	286	0	meson-install	7b0b7fc1634265a5
+0	722	1646161130020022503	build.ninja	b32d863e1d521ba1
+1	286	0	meson-install	7b0b7fc1634265a5
+0	284	0	meson-install	7b0b7fc1634265a5
+0	731	1646161225384484016	build.ninja	b32d863e1d521ba1
+1	282	0	meson-install	7b0b7fc1634265a5
+0	282	0	meson-install	7b0b7fc1634265a5

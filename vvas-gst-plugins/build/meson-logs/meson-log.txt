@@ -1,0 +1,291 @@
+Build started at 2022-03-01T19:00:26.562525
+Main binary: /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/python3
+Build Options: -Denable_ppe=1 -Dprefix=/usr -Dbackend=ninja
+Python system: Linux
+The Meson build system
+Version: 0.55.1
+Source dir: /home/cg21670/work/VVAS/vvas-gst-plugins
+Build dir: /home/cg21670/work/VVAS/vvas-gst-plugins/build
+Build type: cross build
+None of 'PKG_CONFIG_PATH_FOR_BUILD' are defined in the environment, not changing global flags.
+Using 'PKG_CONFIG_PATH' from environment with value: '/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib/pkgconfig:/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/share/pkgconfig'
+WARNING: PKG_CONFIG_PATH environment variable has changed between configurations, meson ignores this. Use -Dpkg_config_path to change pkg-config search path instead.
+Project name: gst-plugins-vvas
+Project version: 1.16.2
+C compiler for the build machine: cc (gcc 7.5.0 "cc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0")
+C linker for the build machine: cc ld.bfd 2.30
+None of 'AR_FOR_BUILD' are defined in the environment, not changing global flags.
+C++ compiler for the build machine: c++ (gcc 7.5.0 "c++ (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0")
+C++ linker for the build machine: c++ ld.bfd 2.30
+C compiler for the host machine: /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc (gcc 10.2.0 "aarch64-xilinx-linux-gcc (GCC) 10.2.0")
+C linker for the host machine: /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc ld.bfd 2.35.1
+C++ compiler for the host machine: /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-g++ (gcc 10.2.0 "aarch64-xilinx-linux-g++ (GCC) 10.2.0")
+C++ linker for the host machine: /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-g++ ld.bfd 2.35.1
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: aarch64
+Host machine cpu: arm64
+Target machine cpu family: aarch64
+Target machine cpu: arm64
+Dependency glib-2.0 found: YES 2.64.5 (cached)
+Dependency gobject-2.0 found: YES 2.64.5 (cached)
+Message: compiling for Embedded platform
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpsnv4ji2g/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpsnv4ji2g/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-declarations: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp3mti3ej_/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp3mti3ej_/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wredundant-decls 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wredundant-decls: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp4jzc1uga/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp4jzc1uga/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wwrite-strings 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wwrite-strings: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpge3w5won/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpge3w5won/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Winit-self 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Winit-self: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmphnnx6vq0/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmphnnx6vq0/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wno-multichar -Wmultichar 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-multichar -Wmultichar: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp3jwtcer9/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp3jwtcer9/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wvla 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wvla: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpz5f2vu5e/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpz5f2vu5e/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wpointer-arith: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmprn1bhqx_/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmprn1bhqx_/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-prototypes: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpxmr2sjop/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpxmr2sjop/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wdeclaration-after-statement: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp1ke_cu2a/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp1ke_cu2a/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wold-style-definition: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpb5wcm21g/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpb5wcm21g/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Waggregate-return 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Waggregate-return: YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp6b_nr94q/testfile.c -pipe -E -P --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdio.h")
+          #error "Header 'stdio.h' could not be found"
+         #endif
+        #else
+         #include <stdio.h>
+        #endif
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Has header "stdio.h" : YES (cached)
+Using cached compile:
+Cached command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp0mpoyf4a/testfile.c -pipe -E -P --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("dlfcn.h")
+          #error "Header 'dlfcn.h' could not be found"
+         #endif
+        #else
+         #include <dlfcn.h>
+        #endif
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Has header "dlfcn.h" : YES (cached)
+Dependency gstreamer-1.0 found: YES 1.16.3 (cached)
+Dependency gstreamer-base-1.0 found: YES 1.16.3 (cached)
+Dependency gstreamer-allocators-1.0 found: YES 1.16.3 (cached)
+Dependency gstreamer-video-1.0 found: YES 1.16.3 (cached)
+Dependency gstreamer-allocators-1.0 found: YES 1.16.3 (cached)
+Dependency xrt found: YES 2.12.0 (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp0q906h1g
+Command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc -L/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/lib -L/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp0q906h1g/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmp0q906h1g/output.exe -pipe --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpm0fcb4ao
+Command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc -L/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/lib -L/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpm0fcb4ao/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpm0fcb4ao/output.exe -pipe --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -luuid -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library uuid found: YES
+Dependency jansson found: YES 2.13.1 (cached)
+Dependency vvas-utils found: YES 1.0 (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpdo7p2um3
+Command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc -L/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/lib -L/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpdo7p2um3/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpdo7p2um3/output.exe -pipe --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Message: enabling PPE
+Program python3 found: YES (/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/python3)
+Configuring vvas-gst-plugins.pc using configuration
+Configuring config.h using configuration
+Running command: /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/python3 -c import shutil; shutil.copy("hooks/pre-commit.hook", ".git/hooks/pre-commit")
+--- stdout ---
+
+--- stderr ---
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/python3.8/shutil.py", line 415, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/python3.8/shutil.py", line 261, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+FileNotFoundError: [Errno 2] No such file or directory: 'hooks/pre-commit.hook'
+
+
+Build targets in project: 12
+
+Found ninja-1.10.1 at /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/ninja
+Running compile:
+Working directory:  /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpgqjsap21
+Command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpgqjsap21/testfile.c -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpgqjsap21/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/
+programs: =/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/libexec/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/libexec/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/libexec/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/../../../../../aarch64-xilinx-linux/bin/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/../../../../../aarch64-xilinx-linux/bin/
+libraries: =/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/../../../../../aarch64-xilinx-linux/lib/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/../../../../../aarch64-xilinx-linux/lib/:/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/lib/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/lib/:/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib/
+
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpvfe19u3l
+Command line:  /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-g++ /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpvfe19u3l/testfile.cpp -o /home/cg21670/work/VVAS/vvas-gst-plugins/build/meson-private/tmpvfe19u3l/output.obj -pipe -c --sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/
+programs: =/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/libexec/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/libexec/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/libexec/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/../../../../../aarch64-xilinx-linux/bin/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/../../../../../aarch64-xilinx-linux/bin/
+libraries: =/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/../../../../../aarch64-xilinx-linux/lib/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/lib/aarch64-xilinx-linux/gcc/aarch64-xilinx-linux/10.2.0/../../../../../aarch64-xilinx-linux/lib/:/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/lib/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/lib/:/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib/aarch64-xilinx-linux/10.2.0/:/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib/
+
+Compiler stderr:
+ 

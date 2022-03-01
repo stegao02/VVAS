@@ -667,7 +667,7 @@ vvas_xrunmodel (vvas_xkpriv * kpriv, VVASFrame *inputs[MAX_NUM_OBJECT])
 
   auto end_time = get_time();
   kpriv->pf.excution_time_dpu = end_time - start_time;
-  LOG_MESSAGE (LOG_LEVEL_INFO, kpriv->log_level, "%s :DPU excution time:%d us", kpriv->modelname.c_str(), kpriv->pf.excution_time_dpu);
+  LOG_MESSAGE (LOG_LEVEL_INFO, kpriv->log_level, "%s :DPU excution time:%lld us", kpriv->modelname.c_str(), kpriv->pf.excution_time_dpu);
   return true;
 }
 

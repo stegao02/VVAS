@@ -1,0 +1,7 @@
+[options]
+prefix = /usr
+backend = ninja
+
+[properties]
+cross_file = ['/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/share/meson/aarch64-xilinx-linux-meson.cross', '/home/cg21670/work/VVAS/vvas-utils/meson.cross']
+

@@ -1,0 +1,26 @@
+[host_machine]
+system = 'linux'
+cpu_family = 'aarch64'
+cpu = 'arm64'
+endian = 'little'
+
+[build_machine]
+system = 'linux'
+cpu_family = 'x86_64'
+cpu = 'x86_64'
+endian = 'little'
+
+[properties]
+c_args = ['--sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux']
+cpp_args = ['--sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux']
+c_link_args = ['--sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux','-L/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/lib', '-L/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib']
+cpp_link_args = ['--sysroot=/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux','-L/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/lib', '-L/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib']
+pkg_config_libdir = ['/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/lib/pkgconfig:/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux/usr/share/pkgconfig']
+sys_root = '/home/cg21670/work/petalinux/2021.2/sysroots/cortexa72-cortexa53-xilinx-linux'
+
+[binaries]
+c = ['/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-gcc']
+cpp = ['/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-g++']
+ar = ['/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-ar']
+pkgconfig = ['/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/pkg-config']
+strip = ['/home/cg21670/work/petalinux/2021.2/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-xilinx-linux/aarch64-xilinx-linux-strip']
